@@ -1,6 +1,6 @@
 # Release process
 
-Do not publish RC2.
+Current public release: `v0.1.0`.
 
 Release only after every technical gate in `VALIDATION.md` passes.
 

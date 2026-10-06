@@ -1,4 +1,4 @@
-# RC2 validation plan
+# v0.1.0 validation record
 
 ## Completed in repository construction
 
@@ -12,26 +12,26 @@
 - [x] Background transport worker so tracing callbacks do not perform blocking HTTP
 - [x] Explicit transport health surface (`flush` + `assert_healthy`)
 
-## Required before release
+## Technical release gates
 
-- [ ] install exact `openai-agents==0.23.1`
-- [ ] run unit/semantic tests with real dependencies
-- [ ] Python compile check
-- [ ] deterministic `ScriptedModel` Runner + real function-tool runtime test
-- [ ] real LoopGrid Core `0.8.1-design-partner` auto-allowed E2E
-- [ ] require `evidence_complete`
-- [ ] require applicable coverage `100%`
-- [ ] require `verify.valid=true` and `failures=[]`
-- [ ] real `needs_approval=True` interruption + `RunState.approve` resume E2E
-- [ ] verify reviewer evidence precedes execution evidence
-- [ ] build wheel/sdist
-- [ ] `twine check dist/*`
-- [ ] inspect wheel contents
-- [ ] fresh venv install built wheel
-- [ ] public import test
-- [ ] GitHub Actions Python matrix
-- [ ] exact tested commit tagged `v0.1.0`
-- [ ] PyPI Trusted Publishing
-- [ ] fresh public PyPI install test
+- [x] install exact `openai-agents==0.23.1`
+- [x] run unit/semantic tests with real dependencies
+- [x] Python compile check
+- [x] deterministic `ScriptedModel` Runner + real function-tool runtime test
+- [x] real LoopGrid Core `0.8.1-design-partner` auto-allowed E2E
+- [x] require `evidence_complete`
+- [x] require applicable coverage `100%`
+- [x] require `verify.valid=true` and `failures=[]`
+- [x] real `needs_approval=True` interruption + `RunState.approve` resume E2E
+- [x] verify reviewer evidence precedes execution evidence
+- [x] build wheel/sdist
+- [x] `twine check dist/*`
+- [x] inspect wheel contents
+- [x] fresh venv install built wheel
+- [x] public import test
+- [x] GitHub Actions Python matrix
+- [x] exact tested commit tagged `v0.1.0`
+- [x] PyPI Trusted Publishing
+- [x] fresh public PyPI install test
 - [ ] website/docs integration page
 - [ ] OpenAI Agents SDK ecosystem submission only after public validation

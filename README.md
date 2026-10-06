@@ -169,7 +169,7 @@ A successful agent run is not evidence that LoopGrid transport succeeded unless 
 
 ## Validation status
 
-RC2 is **not a public release**. Required gates before v0.1.0:
+v0.1.0 is **publicly released and validated**. Release validation and rollout status:
 
 - exact `openai-agents==0.23.1` runtime install
 - semantic/unit tests
