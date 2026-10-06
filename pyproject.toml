@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loopgrid-openai-agents"
+version = "0.1.0"
+description = "Signed, tamper-evident decision evidence for OpenAI Agents SDK workflows using LoopGrid"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{name = "LoopGrid"}]
+dependencies = [
+  "loopgrid>=0.8.0,<0.9",
+  "openai-agents>=0.23.1,<0.24",
+]
+keywords = [
+  "openai-agents", "agents-sdk", "ai-agents", "agent-governance",
+  "decision-evidence", "audit-trail", "provenance", "tamper-evident", "loopgrid"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+]
+
+[project.urls]
+Homepage = "https://loopgrid.io/integrations/openai-agents/"
+Repository = "https://github.com/loopgridio/loopgrid-openai-agents"
+Issues = "https://github.com/loopgridio/loopgrid-openai-agents/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.24", "build>=1.2", "twine>=6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["loopgrid_openai_agents*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
